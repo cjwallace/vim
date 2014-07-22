@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/Chris/.vim'
+let g:netrw_dirhist_2='/Users/Chris/DataScience/R/Vim-R-plugin-master'
+let g:netrw_dirhist_3='/Users/Chris/Dropbox/bitcollider/public'
+let g:netrw_dirhist_4='/Users/Chris/Dropbox/bitcollider/_posts'
+let g:netrw_dirhist_5='/Users/Chris'
+let g:netrw_dirhist_6='/Users/Chris/Dropbox/bitcollider/_layouts'
+let g:netrw_dirhist_7='/Users/Chris/Dropbox/bitcollider/_includes'
+let g:netrw_dirhist_8='/Users/Chris/Desktop/EDHP/LHC/dilepton/zp_dimuon'
+let g:netrw_dirhist_9='/Users/Chris/Desktop/EDHP/LHC/dilepton/zp_dimuon/Events'
