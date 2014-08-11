@@ -5,8 +5,10 @@ execute pathogen#infect()
 set t_Co=256
 set background=dark
 let g:molokai_original = 1
-colorscheme molokai 
+"colorscheme molokai 
 "colorscheme zenburn 
+"colorscheme jellybeans
+colorscheme jellymod
 syntax on
 filetype indent plugin on
 set nu
@@ -36,11 +38,23 @@ hi NonText guibg=#2A3329 ctermbg=234
 highlight ColorColumn ctermbg=236 guibg=#2c2d27
 let &colorcolumn=join(range(81,999),",")
 
+"gutter colour
+"highlight LineNr ctermbg=236 ctermfg=2
+
 " drop-down menu options
-"set wildmenu
-"set wildmode=list:longest
+set wildmenu
+set wildmode=list:longest,full
 "set completeopt=longest,menuone
 
+"enable status bar and set colour
+set laststatus=2
+highlight StatusLine ctermfg=2 ctermbg=236
+
+"highlight status bar in insert mode
+if version >= 700
+  au InsertEnter * hi StatusLine ctermfg=236 ctermbg=2
+  au InsertLeave * hi StatusLine ctermbg=236 ctermfg=2
+endif
 
 " python tab completion
 filetype plugin on
